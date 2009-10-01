@@ -18,9 +18,11 @@ import time
 portal_name  = 'portal'
 portal_owner = 'portal_owner'
 default_user = ZopeTestCase._user_name
+#default_user = PloneTestCase.default_user
 
 
 class BaseTestCase(ZopeTestCase.PortalTestCase):
+#class BaseTestCase(PloneTestCase.PloneTestCase):
 
     def getPortal(self):
         '''Returns the portal object.'''
