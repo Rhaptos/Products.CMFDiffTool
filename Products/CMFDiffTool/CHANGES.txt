@@ -1,0 +1,18 @@
+CMFDiffTool-0.3.3
+  - ramcache (26 Nov 2008)
+    - remove unused module_changeset_template.pt, an old unused fork or module_export_template 
+
+CMFDiffTool-0.3.2
+  - Fixed #6024: patch view breaking when images involved
+
+CMFDiffTool-0.3.1
+  - tweak for templates to pass xmllint
+
+CMFDiffTool-0.3
+  - upgrade to Plone 2.5
+
+CMFDiffTool-0.2
+  - Link to default views in changesets (task 1799, bugday, jccooper)
+
+CMFDiffTool-0.1
+  - Initial release
