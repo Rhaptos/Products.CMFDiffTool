@@ -1,3 +1,6 @@
+CMFDiffTool-0.4
+  - generic setup refactor. Rhaptos 2.0 release
+
 CMFDiffTool-0.3.3
   - ramcache (26 Nov 2008)
     - remove unused module_changeset_template.pt, an old unused fork or module_export_template 
