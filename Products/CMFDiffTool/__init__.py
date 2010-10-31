@@ -11,7 +11,7 @@ Public License Version 2.1 (LGPL).  See LICENSE.txt for details.
 import sys
 from Products.CMFCore.DirectoryView import registerDirectory
 from Products.CMFCore import utils
-from Products.CMFCore import CMFCorePermissions
+from Products.CMFCore import permissions
 import CMFDiffTool
 import FieldDiff
 import TextDiff
@@ -53,6 +53,6 @@ def initialize(context):
     utils.initializeBasesPhase2( z_bases, context )
     utils.ContentInit(ChangeSet.ChangeSet.meta_type,
                       content_types = contentClasses,
-                      permission = CMFCorePermissions.AddPortalContent,
+                      permission = permissions.AddPortalContent,
                       extra_constructors = contentConstructors,
                       fti = ChangeSet.factory_type_information).initialize(context)
