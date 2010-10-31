@@ -7,6 +7,7 @@ Author: Brent Hendricks
 This software is subject to the provisions of the GNU Lesser General
 Public License Version 2.1 (LGPL).  See LICENSE.txt for details.
 """
+from zope.interface import implements
 
 from Globals import InitializeClass
 from Acquisition import aq_base
@@ -19,7 +20,7 @@ class MergeError(Exception):
 class BaseDiff:
     """Basic diff type"""
 
-    __implements__ = (IDifference)
+    implements(IDifference)
     __allow_access_to_unprotected_subobjects__ = 1
     meta_type = "Base Diff"
     

@@ -7,6 +7,7 @@ Author: Brent Hendricks
 This software is subject to the provisions of the GNU Lesser General
 Public License Version 2.1 (LGPL).  See LICENSE.txt for details.
 """
+from zope.interface implements implements
 
 from Products.CMFCore.utils import UniqueObject
 from Products.CMFCore.utils import getToolByName
@@ -37,7 +38,7 @@ class CMFDiffTool(UniqueObject, SimpleItem):
                       ) + SimpleItem.manage_options
                     )
 
-    __implements__ = (IDiffTool)
+    implements(IDiffTool)
 
     ## Internal attributes
     _difftypes = {}

@@ -7,6 +7,7 @@ Author: Brent Hendricks
 This software is subject to the provisions of the GNU Lesser General
 Public License Version 2.1 (LGPL).  See LICENSE.txt for details.
 """
+from zope.interface import implements
 
 from Globals import InitializeClass
 from BaseDiff import BaseDiff, _getValue, MergeError
@@ -16,7 +17,7 @@ from interfaces.portal_diff import IDifference
 class BinaryDiff(BaseDiff):
     """Simple binary difference"""
 
-    __implements__ = (IDifference)
+    implements(IDifference)
 
     meta_type = "Binary Diff"
 

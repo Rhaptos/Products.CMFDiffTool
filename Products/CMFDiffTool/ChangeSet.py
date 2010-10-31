@@ -7,6 +7,7 @@ Author: Brent Hendricks
 This software is subject to the provisions of the GNU Lesser General
 Public License Version 2.1 (LGPL).  See LICENSE.txt for details.
 """
+from zope.interface import implements
 
 from Globals import InitializeClass
 import transaction
@@ -71,7 +72,7 @@ class ChangeSet(SkinnedFolder, DefaultDublinCoreImpl):
     portal_type = "ChangeSet"
     security = ClassSecurityInfo()
 
-    __implements__ = (IChangeSet)
+    implements(IChangeSet)
     
     def __init__(self, id, title=''):
         """ChangeSet constructor"""

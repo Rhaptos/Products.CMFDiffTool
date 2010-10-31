@@ -7,6 +7,7 @@ Author: Brent Hendricks
 This software is subject to the provisions of the GNU Lesser General
 Public License Version 2.1 (LGPL).  See LICENSE.txt for details.
 """
+from zope.interface import implements
 
 from Globals import InitializeClass
 from FieldDiff import FieldDiff
@@ -16,7 +17,7 @@ from interfaces.portal_diff import IDifference
 class ListDiff(FieldDiff):
     """Text difference"""
 
-    __implements__ = (IDifference)
+    implements(IDifference)
 
     meta_type = "List Diff"
 

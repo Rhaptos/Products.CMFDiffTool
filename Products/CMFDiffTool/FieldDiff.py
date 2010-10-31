@@ -7,6 +7,7 @@ Author: Brent Hendricks
 This software is subject to the provisions of the GNU Lesser General
 Public License Version 2.1 (LGPL).  See LICENSE.txt for details.
 """
+from zope.interface import implements
 
 import difflib
 from Globals import InitializeClass
@@ -27,7 +28,7 @@ TAG_DELETE_CLOSE = "</del>"
 class FieldDiff(BaseDiff):
     """Text difference"""
 
-    __implements__ = (IDifference)
+    implements(IDifference)
 
     meta_type = "Field Diff"
 

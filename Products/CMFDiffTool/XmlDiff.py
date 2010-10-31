@@ -7,6 +7,7 @@ Author: Simon Mueller
 This software is subject to the provisions of the GNU Lesser General
 Public License Version 2.1 (LGPL).  See LICENSE.txt for details.
 """
+from zope.interface import implements
 
 #import difflib
 from Globals import InitializeClass
@@ -17,7 +18,7 @@ from interfaces.portal_diff import IDifference
 class XmlDiff(BaseDiff):
     """XML difference"""
 
-    __implements__ = (IDifference)
+    implements(IDifference)
 
     meta_type = "XML Diff"
     
